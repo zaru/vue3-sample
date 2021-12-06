@@ -15,6 +15,11 @@
         </router-link>
       </li>
       <li>
+        <router-link to="/simple_callback">
+          Simple Callback Page
+        </router-link>
+      </li>
+      <li>
         <router-link to="/simple_vmodel">
           Simple v-model Page
         </router-link>

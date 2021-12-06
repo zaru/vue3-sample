@@ -4,12 +4,14 @@ import App from './App.vue';
 import Home from './pages/Home.vue';
 import About from './pages/About.vue';
 import SimplePage from './pages/SimplePage.vue';
+import SimpleCallbackPage from './pages/SimpleCallbackPage.vue';
 import SimpleVmodelPage from './pages/SimpleVmodelPage.vue';
 
 const routes = [
   { path: '/', component: Home },
   { path: '/about', component: About },
   { path: '/simple_page', component: SimplePage },
+  { path: '/simple_callback', component: SimpleCallbackPage },
   { path: '/simple_vmodel', component: SimpleVmodelPage },
 ];
 

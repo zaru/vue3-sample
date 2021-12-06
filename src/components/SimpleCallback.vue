@@ -1,24 +1,21 @@
 <script setup lang="ts">
 interface ISimpleComponentProps {
   name: string,
-  value: string
+  value: string,
+  // MEMO: emit と違い関数名が変わると親で修正漏れがあっても型チェックでエラーになる
+  // VS Code の場合はエディタ上で警告されるが IntelliJ は警告が出ない、悲しい
+  // 実行時には該当コールバック関数がないとエラーにはなるので emit よりも堅いのは事実
+  update(value: string): void
 }
 const props = defineProps<ISimpleComponentProps>();
-
-interface ISimpleComponentEmits {
-  // MEMO: このイベント名を変更し親側の変更が漏れたとしてもエラーにはならない、静かに死ぬだけ
-  // 実行時にもエラーにならないので callback と比較すると気が付きにくいかもしれない
-  // 一応、実行時に Vue warn の警告がコンソールには出力される
-  (e: 'update', value: string): void
-}
-const emits = defineEmits<ISimpleComponentEmits>();
 
 const updateValue = (event: KeyboardEvent) => {
   const target = event.target;
   if (!(target instanceof HTMLInputElement)) {
     return;
   }
-  emits('update', target.value);
+
+  props.update(target.value);
 };
 </script>
 
