@@ -17,6 +17,8 @@ const inputValue = ref('initial value');
         <li>@update="updateValue" を省略できる糖衣構文</li>
         <li>emits 関数がシンプルなら v-model は楽ではある</li>
         <li>慣れていないと更新処理がブラックボックスに感じるかも</li>
+        <li>この v-model のことを双方向データバインディングを呼ぶ</li>
+        <li>子が直接、親を更新できるわけではない (これは非推奨)</li>
       </ul>
     </li>
   </ul>
