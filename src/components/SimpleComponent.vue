@@ -13,7 +13,7 @@ interface ISimpleComponentEmits {
 }
 const emits = defineEmits<ISimpleComponentEmits>();
 
-const updateValue = (event: KeyboardEvent) => {
+const updateValue = (event: Event) => {
   const target = event.target;
   if (!(target instanceof HTMLInputElement)) {
     return;

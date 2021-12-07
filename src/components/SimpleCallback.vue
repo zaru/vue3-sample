@@ -9,7 +9,7 @@ interface ISimpleComponentProps {
 }
 const props = defineProps<ISimpleComponentProps>();
 
-const updateValue = (event: KeyboardEvent) => {
+const updateValue = (event: Event) => {
   const target = event.target;
   if (!(target instanceof HTMLInputElement)) {
     return;
