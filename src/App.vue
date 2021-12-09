@@ -47,6 +47,11 @@
               v-model で複数渡すバージョン
             </router-link>
           </li>
+          <li>
+            <router-link to="/deep_nest/provide_inject">
+              Provide Inject バージョン
+            </router-link>
+          </li>
         </ul>
       </li>
         </router-link>

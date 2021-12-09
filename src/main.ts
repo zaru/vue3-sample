@@ -9,6 +9,7 @@ import SimpleVmodelPage from './pages/SimpleVmodelPage.vue';
 import DeepNestSimplePage from './pages/deep_nest/SimplePage.vue';
 import DeepNestVmodelPage from './pages/deep_nest/VmodelPage.vue';
 import DeppNestVmodelMultiPage from './pages/deep_nest/VmodelMultiPage.vue';
+import DeepNestProvideInjectPage from './pages/deep_nest/ProvideInjectPage.vue';
 
 const routes = [
   { path: '/', component: Home },
@@ -19,6 +20,7 @@ const routes = [
   { path: '/deep_nest/simple', component: DeepNestSimplePage },
   { path: '/deep_nest/vmodel', component: DeepNestVmodelPage },
   { path: '/deep_nest/vmodel_multi', component: DeppNestVmodelMultiPage },
+  { path: '/deep_nest/provide_inject', component: DeepNestProvideInjectPage },
 ];
 
 const router = createRouter({
