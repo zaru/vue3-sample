@@ -6,6 +6,7 @@ import About from './pages/About.vue';
 import SimpleEmitPage from './pages/SimpleEmitPage.vue';
 import SimpleCallbackPage from './pages/SimpleCallbackPage.vue';
 import SimpleVmodelPage from './pages/SimpleVmodelPage.vue';
+import DeepNestSimplePage from './pages/deep_nest/SimplePage.vue';
 
 const routes = [
   { path: '/', component: Home },
@@ -13,6 +14,7 @@ const routes = [
   { path: '/simple_emit', component: SimpleEmitPage },
   { path: '/simple_callback', component: SimpleCallbackPage },
   { path: '/simple_vmodel', component: SimpleVmodelPage },
+  { path: '/deep_nest/simple', component: DeepNestSimplePage },
 ];
 
 const router = createRouter({

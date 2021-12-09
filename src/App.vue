@@ -30,8 +30,15 @@
         </ul>
       </li>
       <li>
-        <router-link to="/simple_vmodel">
-          Simple v-model Page
+        <p>ネストが深いコンポーネント連携</p>
+        <ul>
+          <li>
+            <router-link to="/deep_nest/simple">
+              シンプルバージョン
+            </router-link>
+          </li>
+        </ul>
+      </li>
         </router-link>
       </li>
       <li>
