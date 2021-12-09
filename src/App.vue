@@ -52,6 +52,11 @@
               Provide Inject バージョン
             </router-link>
           </li>
+          <li>
+            <router-link to="/deep_nest/provide_inject_typed">
+              Provide Inject 型指定バージョン
+            </router-link>
+          </li>
         </ul>
       </li>
         </router-link>
