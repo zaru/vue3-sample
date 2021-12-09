@@ -37,6 +37,11 @@
               シンプルバージョン
             </router-link>
           </li>
+          <li>
+            <router-link to="/deep_nest/vmodel">
+              v-model バージョン
+            </router-link>
+          </li>
         </ul>
       </li>
         </router-link>
