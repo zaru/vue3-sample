@@ -42,6 +42,11 @@
               v-model バージョン
             </router-link>
           </li>
+          <li>
+            <router-link to="/deep_nest/vmodel_multi">
+              v-model で複数渡すバージョン
+            </router-link>
+          </li>
         </ul>
       </li>
         </router-link>
